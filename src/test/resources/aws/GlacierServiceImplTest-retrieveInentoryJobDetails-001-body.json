@@ -1,0 +1,34 @@
+{
+	"VaultARN":"arn:aws:glacier:us-east-1:337884261485:vaults/patman",
+	"InventoryDate":"2014-09-13T16:00:17Z",
+	"ArchiveList":[
+		{
+			"ArchiveId":"DHzzl69zHPSVpR_U89yTm2rjLi5wsYiQ9r908Ss9DioQJDNGpCHMhtZr43cXz6hudBsxN9vLIbwiUBfqws6API86Srw--8heioCr9aUlvMsHqV49KVw25UBTl425ZgVtoBphoXlMuA",
+			"ArchiveDescription":"Volumesuntitledbackupfull-backupsbackup_patrickanblackpearl192.168.0.112gbmFullBackup-Blackpearl-2006-05.gbp",
+			"CreationDate":"2014-09-13T01:28:34Z",
+			"Size":458274466,
+			"SHA256TreeHash":"1c24dd38c5c6904303431c91cecb5d2c6862f075112a8e0a3f7d85213d8761f3"
+		},
+		{
+			"ArchiveId":"58IRLzQ5n3eA-Mipm2_T5RFIm-1IGr5cA5P14T2BK4T9lf8XXrtW7mpDbDXI1X6ErvV3mNQhc0U1C7KxspfYGPSOCJVfzqiA961-zGYbkDomM6g_Rg8JTpYUGhFe2ZUv2eRSU07XtA",
+			"ArchiveDescription":"Volumesuntitledbackupfull-backupsbackup_patrickanblackpearl192.168.0.112gbmfull_backup-blackpearl-2005-12-02.gbp",
+			"CreationDate":"2014-09-13T03:19:11Z",
+			"Size":1243756703,
+			"SHA256TreeHash":"07040400c3ed2e01278fb0aa369197de74bbe1b2196cfbccfe9e8183a186cb53"
+		},
+		{
+			"ArchiveId":"11EPPMygIg3xX-_olrC06Ng3d5fLLEN-C6aSAvr39_8It_4Iqj6zbfmMix2_DCv2UfgoPJh2UKbgnHskG75EwELL6i34lYgdKrlC2pBB-v7oAUiFc5exa0D4uv0LEBjYM1DGn41DYw",
+			"ArchiveDescription":"Volumesuntitledbackupfull-backupsbackup_patrickanblackpearl192.168.0.112gbmfull_backup-blackpearl-2005-12-02.C000",
+			"CreationDate":"2014-09-13T04:10:38Z",
+			"Size":1998377230,
+			"SHA256TreeHash":"03f53d858c0c1c35fe8a079c43687a644b6210aefecfb07df016f2f31d19feb7"
+		},
+		{
+			"ArchiveId":"1p05iTIy50I1ZT7JkrN3t420PWu5L_veCGjyskUJBXo_6IDrDn-ZOBDygCoPKActZjRu1HuYyAHoNbyzUEqO1C4hqp_he88xTPWyf5IPloSuChR4E3ptIavO5FJ7B59nz0gw8tck6g",
+			"ArchiveDescription":"Volumesuntitledbackupfull-backupsbackup_patrickanblackpearl192.168.0.112gbmfull_backup-blackpearl-2005-12-02.C001",
+			"CreationDate":"2014-09-13T04:41:31Z",
+			"Size":1999338160,
+			"SHA256TreeHash":"c02ee49b2eca1983005157288bc672231f947f98a6cfa2f8ceb78e95745ea590"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+!!com.amazonaws.services.glacier.model.DescribeJobResult
+SHA256TreeHash: null
+SNSTopic: null
+action: InventoryRetrieval
+archiveId: null
+archiveSHA256TreeHash: null
+archiveSizeInBytes: null
+completed: false
+completionDate: null
+creationDate: '2014-09-13T19:27:26.601Z'
+inventoryRetrievalParameters:
+  endDate: null
+  format: JSON
+  limit: null
+  marker: null
+  startDate: null
+inventorySizeInBytes: null
+jobDescription: null
+jobId: f0LHbQ2DroCqI1JkohxTjfg06wgPIRfYOXi8Opl3pxeN1Aln0he9K06qa8-uSIKqUmNS8KFtf7GqJKUPvBj2c-vzQX8h
+retrievalByteRange: null
+statusCode: InProgress
+statusMessage: null
+vaultARN: arn:aws:glacier:us-east-1:337884261485:vaults/patman

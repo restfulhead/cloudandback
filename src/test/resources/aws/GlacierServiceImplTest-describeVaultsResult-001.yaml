@@ -1,0 +1,32 @@
+---
+!!com.amazonaws.services.glacier.model.DescribeVaultOutput
+creationDate: '2014-09-13T18:17:58.449Z'
+lastInventoryDate: null
+numberOfArchives: 0
+sizeInBytes: 0
+vaultARN: arn:aws:glacier:us-east-1:0000000000:vaults/TEST-c29andj46214f66qb1bd25gik2
+vaultName: TEST-c29andj46214f66qb1bd25gik2
+---
+!!com.amazonaws.services.glacier.model.DescribeVaultOutput
+creationDate: '2014-09-13T17:57:34.881Z'
+lastInventoryDate: null
+numberOfArchives: 0
+sizeInBytes: 0
+vaultARN: arn:aws:glacier:us-east-1:0000000000:vaults/TEST-kc32akbdrk9dekv78lpr8b3q11
+vaultName: TEST-kc32akbdrk9dekv78lpr8b3q11
+---
+!!com.amazonaws.services.glacier.model.DescribeVaultOutput
+creationDate: '2014-09-13T17:55:28.439Z'
+lastInventoryDate: null
+numberOfArchives: 0
+sizeInBytes: 0
+vaultARN: arn:aws:glacier:us-east-1:0000000000:vaults/TEST-l7ungl2h21i30i0i6aaau1cm3h
+vaultName: TEST-l7ungl2h21i30i0i6aaau1cm3h
+---
+!!com.amazonaws.services.glacier.model.DescribeVaultOutput
+creationDate: '2014-09-13T00:56:07.897Z'
+lastInventoryDate: '2014-09-13T16:00:18.287Z'
+numberOfArchives: 4
+sizeInBytes: 5699877631
+vaultARN: arn:aws:glacier:us-east-1:0000000000:vaults/test
+vaultName: test

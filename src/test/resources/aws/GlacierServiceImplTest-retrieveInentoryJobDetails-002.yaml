@@ -1,0 +1,8 @@
+!!com.amazonaws.services.glacier.model.GetJobOutputResult
+acceptRanges: bytes
+archiveDescription: GlacierServiceImplTest-testUploadFile.txt
+body: !!com.amazonaws.util.ServiceClientHolderInputStream {}
+checksum: c07c915cb0fff6caff4ad41fe7e70e1695e3b762d1066d52017febcf51235ac0
+contentRange: null
+contentType: application/octet-stream
+status: 200

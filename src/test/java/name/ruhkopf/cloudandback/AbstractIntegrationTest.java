@@ -1,7 +1,10 @@
 package name.ruhkopf.cloudandback;
 
 import static org.junit.Assert.assertNotNull;
-import name.ruhkopf.cloudandback.App;
+
+import java.math.BigInteger;
+import java.security.SecureRandom;
+
 import name.ruhkopf.cloudandback.aws.AWSSettings;
 
 import org.junit.Before;
@@ -23,6 +26,8 @@ public abstract class AbstractIntegrationTest
 
 	protected Yaml yaml;
 
+	protected SecureRandom random = new SecureRandom();
+
 	@Before
 	public void setup()
 	{
@@ -39,6 +44,11 @@ public abstract class AbstractIntegrationTest
 		assertNotNull(
 				"You need to provide your AWS credentials as documented here: http://docs.aws.amazon.com/AWSSdkDocsJava/latest/DeveloperGuide/credentials.html",
 				awsSettings.getSecretKey());
+	}
+
+	protected String getRandomName()
+	{
+		return new BigInteger(130, random).toString(32);
 	}
 
 }

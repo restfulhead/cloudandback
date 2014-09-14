@@ -1,7 +1,0 @@
-!!com.amazonaws.services.glacier.model.DescribeVaultOutput
-creationDate: '2014-09-13T00:56:07.897Z'
-lastInventoryDate: '2014-09-13T09:59:53.708Z'
-numberOfArchives: 2
-sizeInBytes: 1702096705
-vaultARN: arn:aws:glacier:us-east-1:00000000000:vaults/test
-vaultName: test

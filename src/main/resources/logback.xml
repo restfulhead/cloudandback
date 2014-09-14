@@ -3,6 +3,7 @@
 
 	<include resource="org/springframework/boot/logging/logback/base.xml"/>
 
+	<logger name="name.ruhkopf" level="DEBUG" />
 	<logger name="com.amazonaws.request" level="DEBUG" />
 	
 	<!--  <logger name="org.springframework.beans.factory.support.DefaultListableBeanFactory" level="DEBUG" /> -->

@@ -15,7 +15,7 @@ public class GlacierServiceFactory
 	private AWSSettings awsSettings;
 
 	/**
-	 * Requests a new {@link GlacierService} instance and sets the region. Because setting the region is not thread-safe, you
+	 * Requests a new {@link GlacierServiceImpl} instance and sets the region. Because setting the region is not thread-safe, you
 	 * should use one service instance per region.
 	 *
 	 * @param region

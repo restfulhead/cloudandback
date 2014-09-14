@@ -1,0 +1,7 @@
+!!com.amazonaws.services.glacier.model.DescribeVaultResult
+creationDate: '2014-09-13T18:17:58.449Z'
+lastInventoryDate: null
+numberOfArchives: 0
+sizeInBytes: 0
+vaultARN: arn:aws:glacier:us-east-1:0000000000:vaults/TEST-c29andj46214f66qb1bd25gik2
+vaultName: TEST-c29andj46214f66qb1bd25gik2
