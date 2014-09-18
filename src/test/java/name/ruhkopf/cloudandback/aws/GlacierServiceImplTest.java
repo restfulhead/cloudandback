@@ -15,7 +15,7 @@ import java.util.concurrent.Future;
 import name.ruhkopf.cloudandback.AbstractIntegrationTest;
 import name.ruhkopf.cloudandback.CommonConstants;
 import name.ruhkopf.cloudandback.service.aws.AWSResult;
-import name.ruhkopf.cloudandback.service.aws.AWSServiceFactory;
+import name.ruhkopf.cloudandback.service.aws.AWSServiceLocator;
 import name.ruhkopf.cloudandback.service.aws.GlacierService;
 
 import org.apache.commons.io.IOUtils;
@@ -46,7 +46,7 @@ public class GlacierServiceImplTest extends AbstractIntegrationTest
 	private static final Logger LOG = LoggerFactory.getLogger(GlacierServiceImplTest.class);
 
 	@Autowired
-	private AWSServiceFactory glacierServiceFactory;
+	private AWSServiceLocator glacierServiceFactory;
 
 	private GlacierService glacierService;
 
@@ -57,7 +57,7 @@ public class GlacierServiceImplTest extends AbstractIntegrationTest
 		super.checkAWSCredentials();
 
 		// create service with default region
-		glacierService = glacierServiceFactory.createService(null);
+		glacierService = glacierServiceFactory.get(null);
 	}
 
 	@Test
@@ -103,7 +103,7 @@ public class GlacierServiceImplTest extends AbstractIntegrationTest
 			marker = result.getMarker();
 
 			final StringBuilder sbr = new StringBuilder();
-			result.forEach((vault) -> sbr.append("---").append(CommonConstants.LINE_SEPARATOR).append(yaml.dump(vault)));
+			result.getItems().forEach((vault) -> sbr.append("---").append(CommonConstants.LINE_SEPARATOR).append(yaml.dump(vault)));
 			LOG.info(sbr.toString());
 		}
 		while (marker != null);

@@ -1,6 +1,6 @@
 package name.ruhkopf.cloudandback.controller;
 
-import name.ruhkopf.cloudandback.domain.HomeForm;
+import name.ruhkopf.cloudandback.model.HomeForm;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

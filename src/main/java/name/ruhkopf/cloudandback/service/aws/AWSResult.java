@@ -1,13 +1,12 @@
 package name.ruhkopf.cloudandback.service.aws;
 
-import java.util.Iterator;
 import java.util.List;
 
 import com.google.common.base.Preconditions;
 
-public class AWSResult<T> implements Iterable<T>
+public class AWSResult<T>
 {
-	private final List<T> internalList;
+	private final List<T> list;
 	private final String marker;
 
 	public AWSResult(final String marker, final List<T> list)
@@ -16,13 +15,12 @@ public class AWSResult<T> implements Iterable<T>
 		this.marker = marker;
 
 		Preconditions.checkNotNull(list, "list must not be null");
-		this.internalList = list;
+		this.list = list;
 	}
 
-	@Override
-	public Iterator<T> iterator()
+	public List<T> getItems()
 	{
-		return internalList.iterator();
+		return list;
 	}
 
 	public String getMarker()

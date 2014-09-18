@@ -30,28 +30,18 @@
 					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cloud"></span></a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a th:href="@{/}" href="home.html">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Region <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li th:each="region : ${allRegions}" role="presentation"><a role="menuitem" tabindex="-1" href="#" th:href="@{'/' + ${region.name}}" th:text="${region.name}">Region</a></li>
+			  			</ul>
+			  		</li>
 					<li><a th:href="@{/example}" href="messages/list.html">Messages Example</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="../navbar/">Default</a></li>
-					<li class="active"><a href="./">Static top</a></li>
-					<li><a href="../navbar-fixed-top/">Fixed top</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -65,13 +55,16 @@
 		<span th:text="${msg}">A success message</span>
 	</div>
 	<div class="alert alert-info" role="alert" th:each="msg : ${globalFlashMessagesINFO}">
-		#{msg}
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		<span th:text="${msg}">A info message</span>
 	</div>
 	<div class="alert alert-warning" role="alert" th:each="msg : ${globalFlashMessagesWARNING}">
-		#{msg}
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		<span th:text="${msg}">A warning message</span>
 	</div>
-		<div class="alert alert-danger" role="alert" th:each="msg : ${globalFlashMessagesDANGER}">
-		#{msg}
+	<div class="alert alert-danger" role="alert" th:each="msg : ${globalFlashMessagesDANGER}">
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		<span th:text="${msg}">A danger message</span>
 	</div>
 	
 	</div>
@@ -91,8 +84,10 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script th:src="@{/js/vendor/jquery-1.11.1.min.js}" src="../static/js/vendor/jquery-1.11.1.min.js"></script>
 	<script th:src="@{/js/vendor/chosen.jquery-1.1.0.min.js}" src="../static/js/vendor/chosen.jquery-1.1.0.min.js"></script>
-	<script th:src="@{/js/vendor/bootstrap-3.2.0.min.js}" src="../static/js/vendor/bootstrap-3.2.0.min.js.js"></script>
+	<script th:src="@{/js/vendor/bootstrap-3.2.0.min.js}" src="../static/js/vendor/bootstrap-3.2.0.min.js"></script>
+	<script th:src="@{/js/vendor/moment-2.8.3.min.js}" src="../static/js/vendor/moment-2.8.3.min.js"></script>
 	
+		
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<!--  
 	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
