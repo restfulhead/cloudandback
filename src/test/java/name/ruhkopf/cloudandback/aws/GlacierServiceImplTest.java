@@ -14,6 +14,9 @@ import java.util.concurrent.Future;
 
 import name.ruhkopf.cloudandback.AbstractIntegrationTest;
 import name.ruhkopf.cloudandback.CommonConstants;
+import name.ruhkopf.cloudandback.service.aws.AWSResult;
+import name.ruhkopf.cloudandback.service.aws.AWSServiceFactory;
+import name.ruhkopf.cloudandback.service.aws.GlacierService;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Before;
@@ -43,7 +46,7 @@ public class GlacierServiceImplTest extends AbstractIntegrationTest
 	private static final Logger LOG = LoggerFactory.getLogger(GlacierServiceImplTest.class);
 
 	@Autowired
-	private GlacierServiceFactory glacierServiceFactory;
+	private AWSServiceFactory glacierServiceFactory;
 
 	private GlacierService glacierService;
 

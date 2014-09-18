@@ -5,7 +5,7 @@ import static org.junit.Assert.assertNotNull;
 import java.math.BigInteger;
 import java.security.SecureRandom;
 
-import name.ruhkopf.cloudandback.aws.AWSSettings;
+import name.ruhkopf.cloudandback.service.aws.AWSSettings;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;

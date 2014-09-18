@@ -24,6 +24,8 @@ public class App
 		return new InMemoryMessageRespository();
 	}
 
+	// public MessageR
+
 	@Bean
 	public Converter<String, Message> messageConverter()
 	{

@@ -1,4 +1,4 @@
-package name.ruhkopf.cloudandback.aws;
+package name.ruhkopf.cloudandback.service.aws;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Lookup;
@@ -9,7 +9,7 @@ import com.amazonaws.regions.Regions;
 import com.google.common.base.Preconditions;
 
 @Service
-public class GlacierServiceFactory
+public class AWSServiceFactory
 {
 	@Autowired
 	private AWSSettings awsSettings;

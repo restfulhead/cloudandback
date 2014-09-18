@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout" layout:decorator="layout">
+<head>
+	<title>to the CLOUD and BACK - Home</title>
+
+	<link th:href="@{/css/home.css}" href="../static/css/home.css" rel="stylesheet" />
+
+</head>
+<body>
+	<div layout:fragment="content" class="container">
+
+		<form action="#" th:action="@{/(changeRegion)}" th:object="${homeForm}" method="post">
+
+			<select class="form-control" id="regionSelect" th:field="*{region}"
+				data-placeholder="Select your region..." tabindex="0">
+				<option th:each="region : ${allRegions}" th:value="${region.name}" th:text="${region.name}" >US East</option>
+			</select>
+			
+			<button type="submit" class="btn btn-primary btn-xs">Update Region</button>
+    	</form>
+
+
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-9">Another test</div>
+		</div>
+
+	</div>
+
+	<div layout:fragment="javascript">
+		<script type="text/javascript">
+    	
+    	$(function () { 
+    		$("#regionSelect").chosen();
+		});
+
+    	</script>
+	</div>
+
+</body>
+</html>

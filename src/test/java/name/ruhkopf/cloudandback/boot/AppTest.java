@@ -2,7 +2,7 @@ package name.ruhkopf.cloudandback.boot;
 
 import static org.junit.Assert.assertNotNull;
 import name.ruhkopf.cloudandback.AbstractIntegrationTest;
-import name.ruhkopf.cloudandback.aws.AWSSettings;
+import name.ruhkopf.cloudandback.service.aws.AWSSettings;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

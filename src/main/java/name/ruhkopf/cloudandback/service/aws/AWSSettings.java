@@ -1,4 +1,4 @@
-package name.ruhkopf.cloudandback.aws;
+package name.ruhkopf.cloudandback.service.aws;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

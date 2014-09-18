@@ -1,4 +1,4 @@
-package name.ruhkopf.cloudandback.aws;
+package name.ruhkopf.cloudandback.service.aws;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package name.ruhkopf.cloudandback.aws;
+package name.ruhkopf.cloudandback.service.aws;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
