@@ -2,6 +2,7 @@ package name.ruhkopf.cloudandback.service.aws;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.thymeleaf.util.StringUtils;
 
 import com.amazonaws.auth.AWSCredentials;
 
@@ -44,4 +45,8 @@ public class AWSSettings implements AWSCredentials
 		return getSecretKey();
 	}
 
+	public boolean isEmpty()
+	{
+		return StringUtils.isEmpty(getSecretKey()) || StringUtils.isEmpty(getAWSAccessKeyId());
+	}
 }

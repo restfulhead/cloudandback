@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+</head>
+
+<body>
+	<div th:fragment="vaults" th:unless="${#lists.isEmpty(vaults)}">
+		<ol class="selectable">
+			<li>
+				<span th:text="${vault.vaultName}">A test vault</span><br/>
+				<span th:text="${#calendars.format(vault.creationDate)}">July 11, 2012 2:17:16 PM CDT</span><br/>
+			</li>
+		</ol>
+	</div>
+</body>
+</html>

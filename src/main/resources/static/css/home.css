@@ -2,3 +2,11 @@
 #regionSelect {
 	width: 200px;
 }
+
+#refreshVaults {
+	margin-bottom: 10px;
+}
+
+#vaultsLastRefreshed {
+	margin-top:5px
+}

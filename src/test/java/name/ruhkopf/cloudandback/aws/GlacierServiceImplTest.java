@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.amazonaws.regions.Regions;
 import com.amazonaws.services.glacier.model.CreateVaultResult;
 import com.amazonaws.services.glacier.model.DescribeJobResult;
 import com.amazonaws.services.glacier.model.DescribeVaultOutput;
@@ -56,8 +57,8 @@ public class GlacierServiceImplTest extends AbstractIntegrationTest
 		// make sure AWS credentials have been setup properly
 		super.checkAWSCredentials();
 
-		// create service with default region
-		glacierService = glacierServiceFactory.get(null);
+		// create service with default settings
+		glacierService = glacierServiceFactory.get(Regions.US_EAST_1, null).get();
 	}
 
 	@Test
